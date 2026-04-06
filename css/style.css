@@ -788,8 +788,9 @@ section { padding: var(--space-8) var(--space-5); }
   .grupo-portal-grid { grid-template-columns: 1fr; padding: var(--space-4) var(--space-3); }
   .menu-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }
   .menu-col h3 { font-size: 9px; }
-  .menu-item .name { font-size: 14px; }
-  .menu-item .price { font-size: 11px; }
+  .menu-item .name { font-size: 12px; }
+  .menu-item .desc { font-size: 9px; }
+  .menu-item .price { font-size: 9px; }
   .location-card { grid-template-columns: 1fr; gap: var(--space-2); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero { height: 70vh; min-height: 480px; }
