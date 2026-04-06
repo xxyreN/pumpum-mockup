@@ -41,8 +41,9 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
@@ -134,7 +135,7 @@ body { padding-top: 28px; }
   background: var(--bg);
   position: sticky;
   top: 28px;
-  z-index: 100;
+  z-index: 900;
 }
 .nav-logo img { height: 68px; width: auto; }
 .nav-right { display: flex; align-items: center; gap: var(--space-5); }
@@ -753,6 +754,7 @@ section { padding: var(--space-8) var(--space-5); }
 .hamburger {
   display: none; background: none; border: none; cursor: pointer;
   width: 28px; height: 20px; position: relative; padding: 0;
+  z-index: 900;
 }
 .hamburger span {
   display: block; position: absolute; left: 0; width: 100%; height: 2px;
